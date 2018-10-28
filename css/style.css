@@ -1,2 +1,41 @@
 /*REMEMBER: NO ID'S AND CLASSES AND ONLY USE SELECTORS*/
-
+li:nth-child(even) {
+	color: green;
+}
+li:nth-child(3) {
+	background-color: lightblue;
+}
+li:first-of-type {
+	border-top: 1px solid green; 
+}
+li:last-of-type {
+	border-bottom: 5px dotted blue; 
+}
+li:nth-child(3,5) {
+	text-anchor: red;
+}
+li:nth-child(5):hover {
+	text-anchor: gray;
+}
+li:nth-child(2,5) {
+	text-decoration: none;
+}
+input:focus {
+	background-color: gray;
+}
+input[placeholder="first name"]:focus {
+	color: green;
+}
+input[placeholder="last name"]:focus {
+	color: blue;
+}
+input[type="password"]:focus {
+	color: none;
+}
+li::selection, li *::selection {
+	color: purple;
+	background-color: yellow;
+}
+input[text="submit"]:hover {
+	color: red;
+}
